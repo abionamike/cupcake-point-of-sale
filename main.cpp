@@ -65,8 +65,7 @@ int main () {
     while(1) {
         system("cls");
         cout << endl << endl;
-        cout << "Cupcake POS - " << version << endl;
-        cout << endl << endl;
+        cout << "Cupcake POS - " << version << endl << endl;
 
         cout << "id | description | price | quantity in stock" << endl;
         for (it = inventory.begin(); it != inventory.end(); it++) {
