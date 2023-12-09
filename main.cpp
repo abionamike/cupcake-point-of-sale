@@ -91,6 +91,7 @@ int main () {
         cout << "[c]omplete a cupcake purchase" << endl;
         cout << "[n]ew tax rate" << endl;
         cout << "[u]pdate cupcake quantity" << endl;
+        cout << "[p]rice update of cupcake" << endl;
         cout << "[q]uit" << endl;
 
         cout << "choice: ";
@@ -166,6 +167,23 @@ int main () {
                     cin >> stock_quantity;
 
                     it -> setQuantity(stock_quantity);
+                    break;
+                }     
+            }
+        }
+        else if(input_option == 'p') {
+            int stock_id;
+            double stock_price;
+
+            cout << "Enter id of cupcake to update: ";
+            cin >> stock_id;
+
+            for (it = inventory.begin(); it != inventory.end(); it++) {
+                if(stock_id == it -> getId())    {
+                    cout << "Enter new price: ";
+                    cin >> stock_price;
+
+                    it -> setPrice(stock_price);
                     break;
                 }     
             }
