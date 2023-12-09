@@ -147,7 +147,11 @@ int main () {
                         system("pause");
                     }
                     break;
-                }     
+                } else {
+                    cout << "id not found!" << endl;
+                    system("pause");
+                    break;
+                }    
             }
         }
         else if (input_option == 'n') {
@@ -168,7 +172,11 @@ int main () {
 
                     it -> setQuantity(stock_quantity);
                     break;
-                }     
+                } else {
+                    cout << "id not found!" << endl;
+                    system("pause");
+                    break;
+                }
             }
         }
         else if(input_option == 'p') {
@@ -185,7 +193,11 @@ int main () {
 
                     it -> setPrice(stock_price);
                     break;
-                }     
+                } else {
+                    cout << "id not found!" << endl;
+                    system("pause");
+                    break;
+                }
             }
         }
     }
